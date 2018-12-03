@@ -1,0 +1,137 @@
+html{
+  height:100%;
+  box-sizing: border-box;
+  // position:relative;
+}
+
+body {
+  height:100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(46,128,246),rgb(81,187,248));
+  font-family: Montserrat, sans-serif;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    min-height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 90px 130px 88px 148px;
+
+    .title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+      padding-bottom: 80px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .number-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 300px;
+
+      .number-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        min-height: 40px;
+        padding: 20px 20px;
+        background-color: white;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0px 0px 23px 6px rgba(179, 187, 194, 0.82);
+
+        .number-titles {
+          margin-bottom: 5px;
+        }
+
+        .number-list-title {
+          font-weight: 500;
+          color: rgb(46,128,246);
+          text-transform: uppercase;
+        }
+
+        .max-min-numbers {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 10px;
+
+          .max-min-title {
+            font-weight: 500;
+            color: rgb(46,128,246);
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .results-field {
+        width: 296px;
+        height: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .number-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        
+        .numbers-title {
+          padding-bottom: 70px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .error-message {
+          font-size: 13px;
+          color: red;
+        }
+
+        input {
+          display: block;
+          background: #e6e6e6;
+          height: 35px;
+          width:100%;
+          border-radius: 25px;
+          padding: 0 30px;
+          font-size: 15px;
+          line-height: 1.5;
+          color: #666666;
+          outline: none;
+          border: none;
+        }
+
+        button {
+          margin-top: 70px;
+          height: 35px;
+          width:70%;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.5;
+          border-radius: 25px;
+          outline: none;
+          background-color: rgb(46,128,246);
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+  
